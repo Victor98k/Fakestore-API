@@ -1,0 +1,610 @@
+
+  
+        
+        
+        
+        
+        *, *:before, *:after {
+            box-sizing: initial;
+        }
+        
+        html {
+            font-size: 65.5%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+             
+        }
+        
+     
+        
+      
+
+
+
+        /* Header / nav  */
+
+
+
+        #home:hover{
+            cursor: pointer;
+            color: #e5760e;
+        }
+
+
+        .header-container {
+            position: relative; 
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid gainsboro;
+            height: 8rem;
+            
+        }
+      
+        
+        header .right-header {
+            display: flex;
+            width: 10rem;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        header .box-icon {
+            font-size: 2.5rem;
+            color: var(--main-color)
+        }
+        
+
+        /* Counter for cart */
+        header .count {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 70%;
+            background-color: #e5760e;
+            color: white;
+            padding: 0 0.2rem;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+
+        .user{
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+
+
+
+
+
+
+
+        /* Second header */
+        .second-header{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+
+        }
+
+        .second-header b {
+            color: white;
+            padding: 10px 20px; 
+            font-size: 2rem;
+            border: none;
+            border-radius: 4rem;
+            background-color: #e5760e;
+        }
+
+        .secondh2-container{
+            margin: 2rem;
+        }
+
+
+                /* Video header */
+
+       .video {
+        width: 100%;
+        max-height: 100%; 
+        object-fit: contain; 
+        
+    }
+
+
+      
+
+        
+
+
+     
+        
+   
+
+
+           
+        /* Categories section  */
+        
+        header .categories{
+            position: relative;
+            background-color: white;
+            top: 10rem;
+            width: 15rem;
+            left: 12rem;
+            padding: 1rem;
+            z-index: 1;
+            gap: 8.5rem;
+            box-sizing: border-box;
+
+
+        
+        
+        }
+
+
+        .categories p:hover{
+            color: #f47820;
+            font-weight: 200;
+            font-size: 2rem; 
+
+        }
+        
+        
+         
+        section {
+            width: 100%;
+            max-height: 50vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+
+
+        
+
+
+
+    
+
+
+
+
+
+
+        h2 {
+            margin-top: 4rem;
+            text-align: center;
+            color: #e5760e;
+            font-weight: 700;
+            font-size: 2.7rem; 
+        
+        }
+
+      
+
+
+
+
+
+
+
+
+
+                /* Content cards */
+
+        
+        main .content-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+
+        .content{
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card{
+            width: 35rem;
+            height: 32rem;
+            
+            border-radius:  .2rem;
+            position: relative;
+            margin-bottom: 2rem;
+
+        }
+        
+        .card .infoCard img {
+            width: 9rem;
+            height: 10rem;
+            object-fit: contain;
+            position: relative;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: transform 0.2s; 
+
+        
+        }
+
+        .card .infoCard img:hover {
+            transform: scale(1.80); 
+          }
+
+        
+
+        
+        
+
+        
+        .infoCard h2 {
+            font-size: 1.5rem;
+            color: black;
+            transition: font-size 0.5s; 
+
+
+            
+        
+        }
+        
+        .infoCard h2:hover {
+            color: #e5760e;
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+        .infoCard b {
+            display: none;
+        }
+        
+        .infoCard p {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .btn {
+            margin-bottom: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 90%;
+            height: 3rem;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background-color: #e5760e;
+            border: none;
+            border-radius: 3rem;
+            color: white;
+            transition: font-size 0.5s; 
+
+        }
+
+        .btn:hover {
+            color: white;
+            cursor: pointer;
+            font-size: 2rem; 
+
+
+        }
+        .btn:active {
+            background-color: lightgrey; 
+            border: 2px solid lightgrey; 
+
+            
+          }
+          
+    
+        
+    
+
+
+
+
+
+
+/* Modal section */
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);   
+
+}
+
+.modal .moreinfo{
+    
+    max-width: 80rem;
+    height: 45rem;
+    background-color: rgba(255, 255, 255, 0.928);
+    margin: 0 auto; 
+    padding: 3rem 2.5rem;
+    transition-property: all;
+    transition-duration: 600ms;
+    transition-timing-function: ease-out;
+    opacity: 1;
+}
+
+.modal .animated {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.moreinfo .closer {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 4.5rem;
+}
+
+.moreinfo p {
+    font-size: 2rem;
+    height: 10rem;
+    width: 80rem;
+    overflow-y: scroll;
+    padding: 1rem;
+
+}
+
+.moreinfo .close:hover{
+    cursor: pointer;
+}
+
+.moreinfo img { 
+    position: relative;
+    width: 10rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: rgba(255, 255, 255, 0.928); /* Trying so the img has the same color as the modal card. But it dosen´t work with the this API */
+
+
+
+}
+
+.modal .close {
+    transform: translateY(-200%);
+    opacity: 0;
+}
+
+
+
+.closed {
+    font-size: 2rem;
+    color: #e5760e;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* CHECKOUT BOX */
+
+
+header .cart-shopping {
+    position: relative;
+
+}
+
+.cart-shopping .listShopping{
+    position: absolute;
+    width: 35rem;
+    padding: 2rem;
+    right: -20px;
+    background-color: rgba(255, 255, 255, 0.965);
+    z-index: 1;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    
+}
+
+.listShopping .contentProductList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentProductList img {
+    width: 6rem;
+    margin-right: 6rem;
+}
+.contentProductList h3{
+    font-size: 1.6rem;
+  
+}
+
+.contentProductList span {
+    margin-left: 3rem;
+}
+
+.contentProductList span:hover{
+    cursor: pointer;
+}
+
+.listShopping .total {
+    display: flex;
+    width: 95%;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    border-radius: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+}
+
+.listShopping .btn {
+    position: initial;
+    margin-top: 2rem;
+    transform: none;
+    border-radius: 3rem;
+
+
+
+}
+
+
+.remove-button {
+    font-size: 2rem;
+    color: #e5760e;
+    cursor: pointer;
+    
+
+}
+
+
+
+.inactive{
+    display: none;
+}
+
+
+
+
+
+
+
+
+        /* Footer  */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer {
+    background-color: whitesmoke;
+    padding: 30px 0;
+
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+  }
+  
+  .footer a {
+    text-decoration: none; 
+    color: black; 
+    margin: 10px 0; 
+
+  }
+  .footer-col h3, .footer-col ul {
+    padding-left: 50px; 
+  }
+  .footer-col h3 {
+    padding-left: 15px; 
+  }
+
+  .footer a:hover{
+    color: #f47820;
+    font-weight: 100;
+    font-size: 2rem; 
+
+}
+
+.footer h3:hover{
+    color: #f47820;
+  
+
+}
+  
+
+
+
+
+
+
+
+
+ /* Responsive section */
+        
+        
+        /* Tabblet and phones */
+        @media (min-width: 768px){
+
+
+            
+            header .menu-alt-right{
+                display: none;
+            }
+        
+            header .categories{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 42rem;
+                font-size: 1.4rem;
+                position: inherit;
+                background: transparent;
+            }
+            main .content-card {
+                display: grid;
+                grid-template-columns: repeat(3,minmax(0,1fr));
+                gap: 10px;
+            }
+            .content-card .card {
+                width: 26rem;
+                
+            }
+        
+        }
+        
+         
+        
+        
+        /* Computers */
+        @media (min-width:1024px) {
+            main .content-card {
+                grid-template-columns: repeat(4,minmax(0,1fr));
+                gap: 15px;
+            }
+            .content-card .card {
+                width: 29rem;
+                
+            }
+           
+        
+        }
+
+
